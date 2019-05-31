@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <android.support.constraint.helper.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:padding="20dp"
+        app:constraint_referenced_ids="tv_num_7,tv_num_8,tv_num_9,tv_num_4,tv_num_5,tv_num_6,tv_num_1,tv_num_2,tv_num_3,tv_num_0,tv_operator_div,tv_dot,tv_operator_times"
+        app:flow_horizontalGap="10dp"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="10dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_num_7"
+        style="@style/text_view_style"
+        android:text="7" />
+
+    <TextView
+        android:id="@+id/tv_num_8"
+        style="@style/text_view_style"
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/tv_num_9"
+        style="@style/text_view_style"
+        android:text="9" />
+
+
+    <TextView
+        android:id="@+id/tv_num_4"
+        style="@style/text_view_style"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/tv_num_5"
+        style="@style/text_view_style"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tv_num_6"
+        style="@style/text_view_style"
+        android:text="6" />
+
+
+    <TextView
+        android:id="@+id/tv_num_1"
+        style="@style/text_view_style"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tv_num_2"
+        style="@style/text_view_style"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/tv_num_3"
+        style="@style/text_view_style"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/tv_num_0"
+        style="@style/text_view_style"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tv_operator_div"
+        style="@style/text_view_style"
+        android:text="/"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <TextView
+        android:id="@+id/tv_operator_times"
+        style="@style/text_view_style"
+        android:text="*" />
+
+    <TextView
+        android:id="@+id/tv_dot"
+        style="@style/text_view_style"
+        android:text="."
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <TextView
+        android:id="@+id/KE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="Compute"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_operator_times"
+        app:layout_constraintEnd_toEndOf="@+id/tv_dot"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_operator_div"
+        app:layout_constraintTop_toTopOf="@+id/tv_operator_times" />
+
+    <TextView
+        android:id="@+id/KR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#03A9F4"
+        android:gravity="right|center_vertical"
+        android:paddingEnd="16dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="58sp"
+        app:layout_constraintBottom_toTopOf="@+id/flow"
+        app:layout_constraintEnd_toEndOf="@+id/flow"
+        app:layout_constraintStart_toStartOf="@+id/flow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

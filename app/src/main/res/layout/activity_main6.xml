@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <android.support.constraint.helper.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFC107"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="tv_num_7,tv_num_8,tv_num_9,tv_num_4,tv_num_5,tv_num_6,tv_num_1,tv_num_2"
+        app:flow_firstHorizontalStyle="spread_inside"
+        app:flow_horizontalStyle="spread"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_num_7"
+        style="@style/text_view_style"
+        android:text="7" />
+
+    <TextView
+        android:id="@+id/tv_num_8"
+        style="@style/text_view_style"
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/tv_num_9"
+        style="@style/text_view_style"
+        android:text="9" />
+
+
+    <TextView
+        android:id="@+id/tv_num_4"
+        style="@style/text_view_style"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/tv_num_5"
+        style="@style/text_view_style"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tv_num_6"
+        style="@style/text_view_style"
+        android:text="6" />
+
+    <TextView
+        android:id="@+id/tv_num_1"
+        style="@style/text_view_style"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tv_num_2"
+        style="@style/text_view_style"
+        android:text="2" />
+
+</android.support.constraint.ConstraintLayout>
